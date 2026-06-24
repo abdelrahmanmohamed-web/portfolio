@@ -1,0 +1,17 @@
+.orbGradient {
+  box-shadow:
+    /* 0 0 12px 4px rgba(180, 30, 70, 0.7), */ 0 0 30px 12px
+    rgba(180, 30, 70, 0.35);
+  /* 0 0 70px 34px rgba(180, 30, 70, 0.15); */
+
+  border: 4px dashed transparent;
+
+  background:
+    linear-gradient(var(--color-main), var(--color-main)) padding-box,
+    linear-gradient(135deg, rgba(220, 50, 90, 0.9), rgba(150, 20, 55, 0.5))
+      border-box;
+}
+
+.transformOrigin {
+  transform-origin: 118px 118px;
+}

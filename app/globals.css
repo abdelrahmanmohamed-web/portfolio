@@ -2,11 +2,28 @@
 
 @theme inline {
   --color-main: #12141d;
-  --color-card: #1a1d27;
+  --color-card-primary: #1a1d27;
+  --color-card-secondary: #19253b;
   --color-accent-primary: #7b1f35;
   --color-accent-hover: #5c1728;
   --color-text-primary: #f8fafc;
   --color-text-secondary: #94a3b8;
+
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-spin-reverse-slow: spin-reverse 10s linear infinite;
+  --animate-spin-medium: spin 6s linear infinite;
+  --animate-spin-reverse-medium: spin-reverse 6s linear infinite;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin-reverse {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
 }
 html {
   scroll-behavior: smooth;
