@@ -14,7 +14,7 @@ const links = [
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 w-full bg-main/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full bg-main/80 backdrop-blur-md md:px-18">
       {/* Mobile Header */}
       <div className="flex md:hidden items-center justify-between px-6 py-4">
         <button onClick={() => setIsOpen(!isOpen)} className="w-8">
