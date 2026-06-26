@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AnimatedOrb } from "@/components/ui/animated-orb";
 
 export default function Hero() {
@@ -24,15 +25,16 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col gap-3.5 w-full max-w-xs">
-          <a
+          <Link
             href="#contact"
             className="bg-accent-primary text-text-primary py-3.5 rounded-full font-medium hover:bg-accent-hover transition-colors text-center text-base"
           >
             Start a Project
-          </a>
+          </Link>
 
           <a
             href="/resume"
+            target="_blank"
             className="border border-text-secondary/20 text-text-primary py-3.5 rounded-full hover:border-text-primary transition-colors text-center text-base"
           >
             My Resume
@@ -53,15 +55,16 @@ export default function Hero() {
           </h2>
 
           <div className="flex gap-4 pt-2">
-            <a
+            <Link
               href="#contact"
               className="bg-accent-primary text-text-primary px-8 py-3.5 rounded-full font-medium hover:bg-accent-hover transition-colors text-base md:text-lg text-center min-w-[170px]"
             >
               Start a Project
-            </a>
+            </Link>
 
             <a
               href="/resume"
+              target="_blank"
               className="border border-text-secondary/20 text-text-primary px-8 py-3.5 rounded-full hover:border-text-primary transition-colors text-base md:text-lg text-center min-w-[170px]"
             >
               My Resume
