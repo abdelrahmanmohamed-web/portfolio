@@ -8,6 +8,7 @@
   --color-accent-hover: #5c1728;
   --color-text-primary: #f8fafc;
   --color-text-secondary: #94a3b8;
+  --color-text-tertiary: #7b1f35;
 
   --animate-spin-slow: spin 8s linear infinite;
   --animate-spin-reverse-slow: spin-reverse 10s linear infinite;
@@ -30,4 +31,25 @@ html {
 }
 body {
   @apply bg-main text-text-primary antialiased;
+}
+
+.dynamic-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .dynamic-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .dynamic-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
