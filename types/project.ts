@@ -1,10 +1,10 @@
 export default interface FeaturedProject {
   id: string;
   title: string;
-  description: string | null;
+  description?: string;
   technologies: string[];
   repositoryUrl: string;
-  liveDemoUrl: string | null;
-  imageUrl: string | null;
+  liveDemoUrl?: string ;
+  imageUrl?: string;
   featured: boolean;
 }

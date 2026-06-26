@@ -7,7 +7,7 @@ import getRepositories from "../repositories/github.repository";
 import FeaturedProject from "@/types/project";
 
 const getOrder = (topics: string[]): number => {
-  const orderTopic = topics.find((t) => t.startsWith("portfolio-project-"));
+  const orderTopic = topics.find((t) => t.startsWith("portfolio-order-"));
   if (!orderTopic) return Infinity;
   return Number(orderTopic.split("-").at(-1));
 };
@@ -23,13 +23,13 @@ export default async function getFeaturedProjects(): Promise<
   const featuredProjects: FeaturedProject[] = featuredRepos.map((r) => ({
     id: String(r.id),
     title: r.name,
-    description: r.description ?? null,
+    description: r.description ?? undefined,
     technologies: (r.topics ?? []).filter(
       (t) => !t.startsWith("portfolio-order"),
     ),
     repositoryUrl: r.html_url,
-    liveDemoUrl: r.homepage ?? null,
-    imageUrl: null,
+    liveDemoUrl: r.homepage ?? undefined,
+    imageUrl: `https://raw.githubusercontent.com/${process.env.GITHUB_USERNAME}/${r.name}/HEAD/public/Screenshot.png`,
     featured: true,
   }));
   return featuredProjects;
