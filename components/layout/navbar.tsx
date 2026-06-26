@@ -16,9 +16,6 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-main/80 backdrop-blur-md border-b border-white/5">
-      {/* الـ Wrapper الداخلي هو اللي هياخد الـ dynamic-container mx-auto 
-        عشان نضمن إن النص والـ Nav يمشوا على نفس خط الـ Hero والـ About بالظبط
-      */}
       <div className="dynamic-container mx-auto w-full">
         {/* Mobile Header */}
         <div className="flex md:hidden items-center justify-between py-4">
@@ -55,7 +52,7 @@ export default function Nav() {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer - Full width backdrop blur */}
+      {/* Mobile Menu Drawer */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
