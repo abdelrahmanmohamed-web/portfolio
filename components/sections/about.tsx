@@ -52,7 +52,7 @@ export default function About() {
                 <div className="relative flex h-14 w-14 items-center justify-center shrink-0">
                   <div className="absolute inset-0 rounded-full bg-accent-primary/35 blur-lg" />
                   <div className="relative z-10 flex items-center justify-center">
-                    <Icon className="text-text-white w-6 h-6" />
+                    <Icon className="text-text-primary w-6 h-6" />
                   </div>
                 </div>
                 <div className="flex-1">

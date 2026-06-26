@@ -34,7 +34,7 @@ export default function Nav() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden flex flex-col items-center gap-6 py-8 bg-card border-b border-gray-800 overflow-hidden"
+            className="md:hidden flex flex-col items-center gap-6 py-8 bg-card-primary  border-b border-gray-800 overflow-hidden"
           >
             {links.map((link) => (
               <a
