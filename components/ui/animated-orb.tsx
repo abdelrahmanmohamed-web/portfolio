@@ -37,9 +37,8 @@ export function AnimatedOrb() {
   };
 
   return (
-    <div className="relative flex size-[300px] md:size-[400px] shrink-0 items-center justify-center select-none">
+    <div className="relative flex size-[260px] sm:size-[300px] lg:size-[400px] shrink-0 items-center justify-center select-none overflow-visible">
       <div className="absolute inset-0 rounded-full bg-accent-primary/15 blur-[40px] mix-blend-screen" />
-
       <div className="absolute inset-0 flex items-center justify-center">
         <svg
           className="size-full"
@@ -104,8 +103,7 @@ export function AnimatedOrb() {
           ))}
         </svg>
       </div>
-
-      <div className="absolute size-[200px] md:size-[260px] rounded-full bg-gradient-to-tr from-main via-card-secondary to-main p-[3px] shadow-[0_0_40px_18px_rgba(123,31,53,0.35)] z-10">
+      <div className="absolute size-[180px] sm:size-[210px] lg:size-[260px] rounded-full bg-gradient-to-tr from-main via-card-secondary to-main p-[3px] shadow-[0_0_40px_18px_rgba(123,31,53,0.35)] z-10">
         <div className="relative size-full rounded-full bg-main overflow-hidden border border-white/5">
           <Image
             src="/hero.jpeg"
@@ -117,8 +115,7 @@ export function AnimatedOrb() {
           <div className="absolute inset-0 bg-gradient-to-t from-accent-primary/20 via-transparent to-transparent mix-blend-color-burn" />
         </div>
       </div>
-
-      <div className="absolute size-[182px] rounded-full border border-accent-primary/30 animate-pulse z-0" />
+      <div className="absolute size-[165px] sm:size-[190px] lg:size-[182px] rounded-full border border-accent-primary/30 animate-pulse z-0" />
     </div>
   );
 }
