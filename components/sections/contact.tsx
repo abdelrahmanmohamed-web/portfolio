@@ -21,6 +21,7 @@ interface FormFieldProps {
   autoComplete: string;
   disabled: boolean;
   error?: string[];
+  defaultValue?: string;
   icon: React.ComponentType<{ className?: string }>;
 }
 
@@ -32,6 +33,7 @@ function FormField({
   autoComplete,
   disabled,
   error,
+  defaultValue,
   icon: Icon,
 }: FormFieldProps) {
   const inputId = useId();
@@ -61,6 +63,7 @@ function FormField({
             autoComplete={autoComplete}
             className={`${baseInputStyles} resize-none py-3 pl-11`}
             placeholder={placeholder}
+            defaultValue={defaultValue}
           />
         ) : (
           <input
@@ -72,6 +75,7 @@ function FormField({
             autoComplete={autoComplete}
             className={baseInputStyles}
             placeholder={placeholder}
+            defaultValue={defaultValue}
           />
         )}
       </div>
@@ -140,6 +144,7 @@ export default function Contact() {
               autoComplete="name"
               disabled={isPending}
               error={state?.errors?.name}
+              defaultValue={state?.values?.name}
               icon={User}
             />
 
@@ -151,6 +156,7 @@ export default function Contact() {
               autoComplete="email"
               disabled={isPending}
               error={state?.errors?.email}
+              defaultValue={state?.values?.email}
               icon={Mail}
             />
 
@@ -162,6 +168,7 @@ export default function Contact() {
               autoComplete="off"
               disabled={isPending}
               error={state?.errors?.message}
+              defaultValue={state?.values?.message}
               icon={MessageSquare}
             />
 

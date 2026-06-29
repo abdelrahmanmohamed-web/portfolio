@@ -34,14 +34,21 @@ export default async function submitContact(
   prevState: ActionResponse | null,
   formData: FormData,
 ): Promise<ActionResponse> {
+  const values = {
+    name: String(formData.get("name") ?? ""),
+    email: String(formData.get("email") ?? ""),
+    message: String(formData.get("message") ?? ""),
+  };
+
   const validatedFields = contactSchema.safeParse(
     Object.fromEntries(formData.entries()),
   );
   if (!validatedFields.success) {
     return {
       success: false,
-      message: "Please fix the errors below.",
+      message: "Please fix the errors.",
       errors: validatedFields.error.flatten().fieldErrors,
+      values,
     };
   }
 
@@ -58,5 +65,4 @@ export default async function submitContact(
     success: true,
     message: "Thank you! Your message has been sent successfully.",
   };
-
 }
