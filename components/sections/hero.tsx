@@ -62,13 +62,15 @@ export default function Hero() {
               Start a Project
             </Link>
 
-            <a
-              href="/resume"
+            <Link
+              href="/cv.pdf"
               target="_blank"
               className="border border-text-secondary/20 text-text-primary px-8 py-3.5 rounded-full hover:border-text-primary transition-colors text-base md:text-lg text-center min-w-[170px]"
             >
               My Resume
-            </a>
+            </Link>
+
+            {/* <a href="/resume" target="_blank"></a> */}
           </div>
         </div>
 
