@@ -15,7 +15,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?logo=tailwindcss&logoColor=white)
 ![Architecture](https://img.shields.io/badge/Architecture-Layer--Based-blueviolet)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 </p>
 
