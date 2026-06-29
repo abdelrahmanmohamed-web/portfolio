@@ -1,36 +1,295 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Abdelrhman Mohamed Portfolio
 
-## Getting Started
+<p align="center">
+  <img src="./assets/website.png" alt="Portfolio Preview" width="100%" />
+</p>
 
-First, run the development server:
+<p align="center">
+  A modern, responsive developer portfolio built with <strong>Next.js 16</strong>, <strong>React 19</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS 4</strong>.
+</p>
+
+<p align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?logo=tailwindcss&logoColor=white)
+![Architecture](https://img.shields.io/badge/Architecture-Layer--Based-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
+
+---
+
+## 🌐 Live Demo
+
+**Website:** https://abdelrhman.online
+
+---
+
+# ✨ Features
+
+- 🎨 Modern responsive UI
+- 🏗 Layer-Based Architecture
+- 📱 Mobile-first design
+- 🚀 Dynamic featured projects fetched directly from GitHub
+- 📧 Contact form powered by Next.js Server Actions
+- ✅ Server-side validation with Zod
+- 📩 Email delivery using Resend
+- 🔍 Complete SEO optimization
+- 🌍 Open Graph & Twitter Cards
+- 📄 JSON-LD Structured Data
+- 🤖 Robots.txt & Sitemap
+- ⚡ Fast performance with Next.js App Router
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React
+- React Icons
+
+## Backend
+
+- Next.js Server Actions
+- Resend
+- GitHub REST API (Octokit)
+- Zod
+
+---
+
+# 🏗 Architecture
+
+This project follows a **Layer-Based Architecture** to separate responsibilities and keep the codebase scalable and maintainable.
+
+```
+                 User
+                   │
+                   ▼
+             React Components
+                   │
+                   ▼
+            Next.js Server Actions
+                   │
+                   ▼
+               Services Layer
+                   │
+                   ▼
+            Repository Layer
+                   │
+                   ▼
+        GitHub API / Resend API
+```
+
+### Layers
+
+### Components
+
+Responsible for the presentation layer and user interface.
+
+```
+components/
+```
+
+---
+
+### Actions
+
+Handle user interactions and server-side form submissions.
+
+```
+lib/actions/
+```
+
+---
+
+### Services
+
+Contain business logic and transform data before it reaches the UI.
+
+```
+lib/services/
+```
+
+---
+
+### Repositories
+
+Responsible for communicating with external APIs.
+
+```
+lib/repositories/
+```
+
+---
+
+### Data
+
+Static application data.
+
+```
+data/
+```
+
+---
+
+### Constants
+
+Shared constants used throughout the application.
+
+```
+constants/
+```
+
+---
+
+### Types
+
+Shared TypeScript interfaces.
+
+```
+types/
+```
+
+---
+
+# 🚀 Dynamic Featured Projects
+
+Featured projects are fetched dynamically from the GitHub API.
+
+Only repositories containing a topic like:
+
+```
+portfolio-order-1
+portfolio-order-2
+portfolio-order-3
+```
+
+will be displayed.
+
+The order number determines the display order.
+
+Any additional GitHub topics are automatically rendered as technology badges.
+
+---
+
+# 📬 Contact Form
+
+The contact section includes:
+
+- Next.js Server Actions
+- Zod Validation
+- Resend Email API
+- HTML Escaping
+- Loading State
+- Success/Error Handling
+
+---
+
+# 🔍 SEO
+
+The portfolio includes:
+
+- Metadata API
+- Open Graph
+- Twitter Cards
+- JSON-LD
+- Sitemap
+- Robots.txt
+- Web Manifest
+
+---
+
+# 📂 Folder Structure
+
+```
+app/
+components/
+constants/
+data/
+lib/
+ ├── actions/
+ ├── repositories/
+ └── services/
+public/
+types/
+```
+
+---
+
+# ⚙️ Environment Variables
+
+Create a `.env.local` file.
+
+```env
+GITHUB_USERNAME=your_github_username
+GITHUB_TOKEN=your_github_token
+
+RESEND_API_KEY=your_resend_api_key
+
+MY_EMAIL=your_email@example.com
+```
+
+---
+
+# 📦 Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+```
+
+Move into the project.
+
+```bash
+cd portfolio
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a production build.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 👨‍💻 Author
 
-To learn more about Next.js, take a look at the following resources:
+**Abdelrhman Mohamed**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Frontend Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🌐 Portfolio  
+https://abdelrhman.online
 
-## Deploy on Vercel
+🐙 GitHub  
+https://github.com/abdelrahmanmohamed-web
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+💼 LinkedIn  
+https://www.linkedin.com/in/abdelrhman-mohammad-683632337
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
