@@ -12,7 +12,7 @@ export const SOCIAL_LINKS = [
     id: "linkedin",
     name: "LinkedIn",
     label: "Connect",
-    href: "https://www.linkedin.com/in/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D9%85%D8%AD%D9%85%D8%AF-683632337",
+    href: "https://www.linkedin.com/in/abdelrhman-mohammad-683632337",
   },
   {
     id: "facebook",
