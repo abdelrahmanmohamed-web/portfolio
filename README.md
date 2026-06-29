@@ -286,9 +286,3 @@ https://github.com/abdelrahmanmohamed-web
 
 💼 LinkedIn  
 https://www.linkedin.com/in/abdelrhman-mohammad-683632337
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
