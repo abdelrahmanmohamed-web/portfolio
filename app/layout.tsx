@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Abdelrhman Mohamed | Frontend Developer",
 
   description:
-    "Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase. Explore my portfolio, featured projects, and experience building modern web applications.",
+    "Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase. Explore my projects and modern web development portfolio.",
 
   keywords: [
     "Abdelrhman Mohamed",
