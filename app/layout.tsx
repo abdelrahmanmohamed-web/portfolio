@@ -14,10 +14,59 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abdelrahman Mohamed",
-  description: "personal landing page",
-};
+  metadataBase: new URL("https://abdelrhman.online"),
 
+  title: "Abdelrhman Mohamed | Frontend Developer",
+
+  description:
+    "Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase. Explore my portfolio, featured projects, and experience building modern web applications.",
+
+  keywords: [
+    "Abdelrhman Mohamed",
+    "Frontend Developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
+    "Supabase",
+    "Portfolio",
+  ],
+
+  authors: [{ name: "Abdelrhman Mohamed" }],
+  creator: "Abdelrhman Mohamed",
+
+  openGraph: {
+    title: "Abdelrhman Mohamed | Frontend Developer",
+    description:
+      "Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase.",
+    url: "https://abdelrhman.online",
+    siteName: "Abdelrhman Portfolio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Abdelrhman Mohamed Portfolio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdelrhman Mohamed | Frontend Developer",
+    description:
+      "Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{

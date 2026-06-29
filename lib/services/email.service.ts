@@ -41,7 +41,6 @@ export default async function sendContactEmail({
         </div>
       `,
     });
-
     return { success: true };
   } catch (error) {
     console.error(error);
