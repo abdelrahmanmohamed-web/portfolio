@@ -67,6 +67,66 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://abdelrhman.online/#person",
+
+  name: "Abdelrhman Mohamed",
+
+  url: "https://abdelrhman.online",
+
+  image: "https://abdelrhman.online/profile.jpg",
+
+  jobTitle: "Frontend Developer",
+
+  description:
+    "Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase.",
+
+  sameAs: [
+    "https://github.com/abdelrahmanmohamed-web",
+    "https://www.linkedin.com/in/abdelrhman-mohammad-683632337/",
+  ],
+
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
+    "Supabase",
+    "HTML",
+    "CSS",
+    "REST APIs",
+    "Git",
+    "GitHub",
+  ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://abdelrhman.online/#website",
+
+  name: "Abdelrhman Mohamed Portfolio",
+
+  url: "https://abdelrhman.online",
+
+  description:
+    "Personal portfolio of Abdelrhman Mohamed, Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and Supabase.",
+
+  inLanguage: "en",
+
+  about: {
+    "@id": "https://abdelrhman.online/#person",
+  },
+
+  publisher: {
+    "@id": "https://abdelrhman.online/#person",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -80,6 +140,19 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Nav />
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd),
+          }}
+        />
         <Footer />
       </body>
     </html>
