@@ -24,7 +24,7 @@ export const SOCIAL_LINKS = [
     id: "gmail",
     name: "Gmail",
     label: "Email Me",
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=abdelrhman78p@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=dev.abdelrhman.mohammad@gmail.com",
   },
 ] as const;
 export const SOCIAL_ICONS: Record<

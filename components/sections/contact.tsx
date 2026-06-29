@@ -49,8 +49,8 @@ function FormField({
       >
         {label}
       </label>
-      <div className="relative flex items-center">
-        <Icon className="absolute left-4 size-4 text-text-secondary/50 pointer-events-none" />
+      <div className="relative flex">
+        <Icon className="absolute left-4 top-3.5 size-4 text-text-secondary/50 pointer-events-none" />
         {type === "textarea" ? (
           <textarea
             id={inputId}
