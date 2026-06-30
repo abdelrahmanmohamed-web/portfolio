@@ -29,7 +29,7 @@ export default async function getFeaturedProjects(): Promise<
     ),
     repositoryUrl: r.html_url,
     liveDemoUrl: r.homepage ?? undefined,
-    imageUrl: `https://raw.githubusercontent.com/${process.env.GITHUB_USERNAME}/${r.name}/HEAD/public/Screenshot.png`,
+    imageUrl: `https://raw.githubusercontent.com/${process.env.GITHUB_USERNAME}/${r.name}/HEAD/assets/Screenshot.png`,
     featured: true,
   }));
   return featuredProjects;
