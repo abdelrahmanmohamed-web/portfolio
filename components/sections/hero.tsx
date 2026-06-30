@@ -35,6 +35,7 @@ export default function Hero() {
           <Link
             href="/cv.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="border border-text-secondary/20 text-text-primary py-3.5 rounded-full hover:border-text-primary transition-colors text-center text-base"
           >
             My Resume
